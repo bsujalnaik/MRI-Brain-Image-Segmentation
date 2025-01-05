@@ -59,15 +59,11 @@ By clustering the pixel intensities of the grayscale image, we can group similar
 
 The **Gaussian Mixture Model (GMM)** captures the statistical properties of each tissue type (cluster) in the MRI image. It fits the data as a combination of multiple Gaussian distributions, each representing a specific tissue type.
 
-### GMM Formula:
-\[ 
-p(x | \theta) = \sum_{k=1}^{K} \pi_k \cdot \phi(x | \mu_k, \Sigma_k) 
-\]
-Where:
-- \( p(x | \theta) \): Probability of data point \( x \) given the model parameters \( \theta \).
-- \( K \): Number of clusters (in this case, 3: Gray Matter, White Matter, and Cerebrospinal Fluid).
-- \( \pi_k \): Weight of the \( k \)-th Gaussian (mixing coefficient).
-- \( \phi(x | \mu_k, \Sigma_k) \): Gaussian distribution with mean \( \mu_k \) and covariance \( \Sigma_k \).
+### GMM Formula
+
+The Generalized Mixture Model (GMM) formula is:
+<br>
+p(x | θ) = Σ (πk * N(x | μk, Σk)) for k = 1 to K
 
 This formula models the intensity distribution of pixel values in the MRI image, allowing the segmentation of distinct brain tissues.
 
