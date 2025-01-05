@@ -80,6 +80,5 @@ This formula models the intensity distribution of pixel values in the MRI image,
 
 - **Original Image**: A grayscale representation of the MRI brain scan.
 - **Segmented Image**: The brain tissues are clustered into three regions using distinct colors (Gray Matter, White Matter, Cerebrospinal Fluid).
--
-![MRI Brain Scan](MRI_Brain_GE_Healthcare.png "MRI Brain Image")
+- ![MRI Brain Scan](MRI_Brain_GE_Healthcare.png "MRI Brain Image")
 
